@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Quran Platform</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>🕌 Learn the Quran</h1>
+    <p>Read • Listen • Practice with Makhraj</p>
+  </header>
+
+  <section class="controls">
+    <label>Select Surah:</label>
+    <select id="surahSelect"></select>
+  </section>
+
+  <main id="quranContainer"></main>
+
+  <section class="progress-section">
+    <h3>Your Progress</h3>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+    <p id="progressText">0 verses completed</p>
+  </section>
+
+  <!-- Makhraj Section -->
+  <section class="makhraj-section">
+    <h2>🎤 Learn Arabic Letters with Makhraj</h2>
+
+    <div class="makhraj-card">
+      <h1 id="makhrajLetter">ا</h1>
+      <p id="makhrajPlace">Makhraj: From throat</p>
+
+      <button onclick="playMakhrajAudio()">🔊 Listen</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Quran Learning Platform</p>
+    <small>Developed by Mudassir Bubere</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
